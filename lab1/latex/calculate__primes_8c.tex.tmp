@@ -1,0 +1,44 @@
+\hypertarget{calculate__primes_8c}{}\doxysection{calculate\+\_\+primes.\+c File Reference}
+\label{calculate__primes_8c}\index{calculate\_primes.c@{calculate\_primes.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}calculate\+\_\+primes.\+h\char`\"{}}\newline
+Include dependency graph for calculate\+\_\+primes.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{calculate__primes_8c_abf230b1e1fa8e0bc361e0b7551c84731}{calculate\+\_\+primes}} (int primes\mbox{[}$\,$\mbox{]}, int n)
+\begin{DoxyCompactList}\small\item\em Это отдельная библиотека для подсчёта простых чисел \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{calculate__primes_8c_abf230b1e1fa8e0bc361e0b7551c84731}\label{calculate__primes_8c_abf230b1e1fa8e0bc361e0b7551c84731}} 
+\index{calculate\_primes.c@{calculate\_primes.c}!calculate\_primes@{calculate\_primes}}
+\index{calculate\_primes@{calculate\_primes}!calculate\_primes.c@{calculate\_primes.c}}
+\doxysubsubsection{\texorpdfstring{calculate\_primes()}{calculate\_primes()}}
+{\footnotesize\ttfamily int calculate\+\_\+primes (\begin{DoxyParamCaption}\item[{int}]{primes\mbox{[}$\,$\mbox{]},  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Это отдельная библиотека для подсчёта простых чисел 
+
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyWarning}{Warning}
+Это только начальная версия данной библеотеки
+\end{DoxyWarning}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{int} \mbox{\hyperlink{calculate__primes_8c_abf230b1e1fa8e0bc361e0b7551c84731}{calculate\_primes}} (\textcolor{keywordtype}{int} primes[], \textcolor{keywordtype}{int} n)\{}
+\DoxyCodeLine{    \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i <= n; i++)\{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (primes[i] != 1)\{}
+\DoxyCodeLine{        \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = i; j <= n; j++)\{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} ((primes[j] \% primes[i] == 0) \&\& (primes[i] != primes [j])) \{}
+\DoxyCodeLine{            primes [j] = 1;}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+ 
