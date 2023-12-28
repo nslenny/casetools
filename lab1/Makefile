@@ -40,4 +40,4 @@ install:
 	sudo cp /home/lenny/PetrSu/2_kurs/RazPO/lab1/primes /usr/local/bin/
 
 test:
-	@echo "clean opopopop"
+	@echo "clean opopopop1231231opopqqweqwe"
