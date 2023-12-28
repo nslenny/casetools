@@ -38,3 +38,6 @@ help:
 install:
 	chmod +x /home/lenny/PetrSu/2_kurs/RazPO/lab1/primes
 	sudo cp /home/lenny/PetrSu/2_kurs/RazPO/lab1/primes /usr/local/bin/
+
+test:
+	@echo "clean opopopop"
